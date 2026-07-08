@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: d254585662819d94dac5439e8c10b1c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6452098163554566148
+    second: flipped_spirtes_0
+  - first:
+      213: 2430149046408296840
+    second: flipped_spirtes_1
+  - first:
+      213: -7396605563235988561
+    second: flipped_spirtes_2
+  - first:
+      213: -1142332480792342388
+    second: flipped_spirtes_3
+  - first:
+      213: -2987302625623699616
+    second: flipped_spirtes_4
+  - first:
+      213: 7795692881632620450
+    second: flipped_spirtes_5
+  - first:
+      213: -785919035958935733
+    second: flipped_spirtes_6
+  - first:
+      213: -1822699123685519932
+    second: flipped_spirtes_7
+  - first:
+      213: -6753574736621199092
+    second: flipped_spirtes_8
+  - first:
+      213: -3574310209510801751
+    second: flipped_spirtes_9
+  - first:
+      213: -3627964296317304799
+    second: flipped_spirtes_10
+  - first:
+      213: -5168235289127496043
+    second: flipped_spirtes_11
+  - first:
+      213: -759386289756420034
+    second: flipped_spirtes_12
+  - first:
+      213: -3888336662930352744
+    second: flipped_spirtes_13
+  - first:
+      213: -6549352486287361423
+    second: flipped_spirtes_14
+  - first:
+      213: 3083355967315517205
+    second: flipped_spirtes_15
+  - first:
+      213: -7821006373545027962
+    second: flipped_spirtes_16
+  - first:
+      213: -4980957792466688402
+    second: flipped_spirtes_17
+  - first:
+      213: 8964668579638951577
+    second: flipped_spirtes_18
+  - first:
+      213: 1116025895334398538
+    second: flipped_spirtes_19
+  - first:
+      213: -7926327412696316874
+    second: flipped_spirtes_20
+  - first:
+      213: 3649445560316990163
+    second: flipped_spirtes_21
+  - first:
+      213: -1607131902117930040
+    second: flipped_spirtes_22
+  - first:
+      213: -4898520543903341883
+    second: flipped_spirtes_23
+  - first:
+      213: -1945482534842026801
+    second: flipped_spirtes_24
+  - first:
+      213: 7945412287489112498
+    second: flipped_spirtes_25
+  - first:
+      213: 5574343224969408500
+    second: flipped_spirtes_26
+  - first:
+      213: -2376128801465419125
+    second: flipped_spirtes_27
+  - first:
+      213: -6840057709810562454
+    second: flipped_spirtes_28
+  - first:
+      213: 5869581334268736238
+    second: flipped_spirtes_29
+  - first:
+      213: 8132819896362820227
+    second: flipped_spirtes_30
+  - first:
+      213: -6721250664272501683
+    second: flipped_spirtes_31
+  - first:
+      213: 8540903013447764394
+    second: flipped_spirtes_32
+  - first:
+      213: -8436878857571620739
+    second: flipped_spirtes_33
+  - first:
+      213: -6328900739480982091
+    second: flipped_spirtes_34
+  - first:
+      213: 3480428988876048157
+    second: flipped_spirtes_35
+  - first:
+      213: -4422764767608583884
+    second: flipped_spirtes_36
+  - first:
+      213: 8080891484216120038
+    second: flipped_spirtes_37
+  - first:
+      213: 7475231292610490923
+    second: flipped_spirtes_38
+  - first:
+      213: -5669781484788860815
+    second: flipped_spirtes_39
+  - first:
+      213: -5353027849772043317
+    second: flipped_spirtes_40
+  - first:
+      213: 982683276569299973
+    second: flipped_spirtes_41
+  - first:
+      213: -1867764201315193945
+    second: flipped_spirtes_42
+  - first:
+      213: -6766908395149648896
+    second: flipped_spirtes_43
+  - first:
+      213: -6477840336756465828
+    second: flipped_spirtes_44
+  - first:
+      213: 4019444962757021744
+    second: flipped_spirtes_45
+  - first:
+      213: -2909392834583441182
+    second: flipped_spirtes_46
+  - first:
+      213: 1721742825635207672
+    second: flipped_spirtes_47
+  - first:
+      213: 5758851411979129467
+    second: flipped_spirtes_48
+  - first:
+      213: -4570108120910687217
+    second: flipped_spirtes_49
+  - first:
+      213: -5558770185558254782
+    second: flipped_spirtes_50
+  - first:
+      213: 3264363286500565422
+    second: flipped_spirtes_51
+  - first:
+      213: -238651583526552415
+    second: flipped_spirtes_52
+  - first:
+      213: 8699906349987114298
+    second: flipped_spirtes_53
+  - first:
+      213: 2333535996926519954
+    second: flipped_spirtes_54
+  - first:
+      213: -3035660556844986203
+    second: flipped_spirtes_55
+  - first:
+      213: 6270663728648035232
+    second: flipped_spirtes_56
+  - first:
+      213: 6544109776374861088
+    second: flipped_spirtes_57
+  - first:
+      213: -3661029610814961837
+    second: flipped_spirtes_58
+  - first:
+      213: 2067870316312511887
+    second: flipped_spirtes_59
+  - first:
+      213: -8126887228320714506
+    second: flipped_spirtes_60
+  - first:
+      213: 6087814071651261669
+    second: flipped_spirtes_61
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flipped_spirtes_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 266
+        width: 79
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff3169a7ea8576a0800000000000000
+      internalID: -6452098163554566148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 285
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889bb66aeaf99b120800000000000000
+      internalID: 2430149046408296840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 287
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab04abdd6af95990800000000000000
+      internalID: -7396605563235988561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 288
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c805bfa39ae9520f0800000000000000
+      internalID: -1142332480792342388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 289
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f8b13e618fa86d0800000000000000
+      internalID: -2987302625623699616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 269
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afe0cb5f5ddf2c60800000000000000
+      internalID: 7795692881632620450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 285
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f337ffccad715f0800000000000000
+      internalID: -785919035958935733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 287
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd0f48ddc874b6e0800000000000000
+      internalID: -1822699123685519932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_8
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 288
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0124ab1f8b7642a0800000000000000
+      internalID: -6753574736621199092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 289
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae7e0d4dcf756ec0800000000000000
+      internalID: -3574310209510801751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_10
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 270
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120053cb1b1e6adc0800000000000000
+      internalID: -3627964296317304799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 269
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596dae3136db648b0800000000000000
+      internalID: -5168235289127496043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_12
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 269
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3844cf513e1675f0800000000000000
+      internalID: -759386289756420034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 270
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89598e6086ad90ac0800000000000000
+      internalID: -3888336662930352744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 224
+        width: 79
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a350a1d960c15a0800000000000000
+      internalID: -6549352486287361423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 222
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f1ceb7ae74aca20800000000000000
+      internalID: 3083355967315517205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_16
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 222
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68658c60424367390800000000000000
+      internalID: -7821006373545027962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_17
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 224
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e662fca274510eab0800000000000000
+      internalID: -4980957792466688402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_18
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 224
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e3c7a8396e86c70800000000000000
+      internalID: 8964668579638951577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_19
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 175
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a4b8b83abec7f00800000000000000
+      internalID: 1116025895334398538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_20
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 173
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6348bc0b637000290800000000000000
+      internalID: -7926327412696316874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 175
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d212d9c66f65a230800000000000000
+      internalID: 3649445560316990163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_22
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 173
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb101bcc0252b9e0800000000000000
+      internalID: -1607131902117930040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_23
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 173
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c220bfc485f40cb0800000000000000
+      internalID: -4898520543903341883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_24
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 145
+        width: 88
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4b30231f14005e0800000000000000
+      internalID: -1945482534842026801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_25
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 128
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9ffcdf066c34e60800000000000000
+      internalID: 7945412287489112498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_26
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 128
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff286401ab0c5d40800000000000000
+      internalID: 5574343224969408500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_27
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 128
+        width: 45
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a3410c17b460fd0800000000000000
+      internalID: -2376128801465419125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 112
+        width: 106
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ac19bc0cb3311a0800000000000000
+      internalID: -6840057709810562454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_29
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 95
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2f9590021f47150800000000000000
+      internalID: 5869581334268736238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_30
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 94
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3826fe03b949dd070800000000000000
+      internalID: 8132819896362820227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_31
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 94
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44edada12259b2a0800000000000000
+      internalID: -6721250664272501683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa90e910a02678670800000000000000
+      internalID: 8540903013447764394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 83
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78a079216f2aea80800000000000000
+      internalID: -8436878857571620739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_34
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 94
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd67843f4a3b28a0800000000000000
+      internalID: -6328900739480982091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_35
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 93
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17cdeba9b7fc4030800000000000000
+      internalID: 3480428988876048157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_36
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 93
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439c39d60ee2f92c0800000000000000
+      internalID: -4422764767608583884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_37
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 93
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e25e219df7152070800000000000000
+      internalID: 8080891484216120038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_38
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 93
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22bee1514b5db760800000000000000
+      internalID: 7475231292610490923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_39
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 93
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178b21587c3e051b0800000000000000
+      internalID: -5669781484788860815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_40
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 93
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3709d388936b5b0800000000000000
+      internalID: -5353027849772043317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_41
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c41aacb3133ad00800000000000000
+      internalID: 982683276569299973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_42
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 56
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abaa60da5e5416e0800000000000000
+      internalID: -1867764201315193945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_43
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 54
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c1f7fcaac1712a0800000000000000
+      internalID: -6766908395149648896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_44
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 54
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f1fe7e8861a16a0800000000000000
+      internalID: -6477840336756465828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_45
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 53
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0309d5fc5efe7c730800000000000000
+      internalID: 4019444962757021744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 53
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0569ea1a2cf97d0800000000000000
+      internalID: -2909392834583441182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_47
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 53
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9509c4afbd4e710800000000000000
+      internalID: 1721742825635207672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_48
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72d545f8dc8bef40800000000000000
+      internalID: 5758851411979129467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_49
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 19
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f049df3a0e6b390c0800000000000000
+      internalID: -4570108120910687217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_50
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b94c5c7f74bd2b0800000000000000
+      internalID: -5558770185558254782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_51
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 18
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea161bd1d195d4d20800000000000000
+      internalID: 3264363286500565422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_52
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 18
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acb0d236a320bcf0800000000000000
+      internalID: -238651583526552415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_53
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 18
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3da5223bb64cb870800000000000000
+      internalID: 8699906349987114298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_54
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 18
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a646720a2626020800000000000000
+      internalID: 2333535996926519954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_55
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 18
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a01792aeca2fd5d0800000000000000
+      internalID: -3035660556844986203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_56
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 20
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab1ef3107fd50750800000000000000
+      internalID: 6270663728648035232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_57
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 19
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d0cff5b2951da50800000000000000
+      internalID: 6544109776374861088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_58
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 19
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357003747f8613dc0800000000000000
+      internalID: -3661029610814961837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_59
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85c16db81d82bc10800000000000000
+      internalID: 2067870316312511887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_60
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0f84abf1f773f80800000000000000
+      internalID: -8126887228320714506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flipped_spirtes_61
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecd56fb4a24c7450800000000000000
+      internalID: 6087814071651261669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flipped_spirtes_0: -6452098163554566148
+      flipped_spirtes_1: 2430149046408296840
+      flipped_spirtes_10: -3627964296317304799
+      flipped_spirtes_11: -5168235289127496043
+      flipped_spirtes_12: -759386289756420034
+      flipped_spirtes_13: -3888336662930352744
+      flipped_spirtes_14: -6549352486287361423
+      flipped_spirtes_15: 3083355967315517205
+      flipped_spirtes_16: -7821006373545027962
+      flipped_spirtes_17: -4980957792466688402
+      flipped_spirtes_18: 8964668579638951577
+      flipped_spirtes_19: 1116025895334398538
+      flipped_spirtes_2: -7396605563235988561
+      flipped_spirtes_20: -7926327412696316874
+      flipped_spirtes_21: 3649445560316990163
+      flipped_spirtes_22: -1607131902117930040
+      flipped_spirtes_23: -4898520543903341883
+      flipped_spirtes_24: -1945482534842026801
+      flipped_spirtes_25: 7945412287489112498
+      flipped_spirtes_26: 5574343224969408500
+      flipped_spirtes_27: -2376128801465419125
+      flipped_spirtes_28: -6840057709810562454
+      flipped_spirtes_29: 5869581334268736238
+      flipped_spirtes_3: -1142332480792342388
+      flipped_spirtes_30: 8132819896362820227
+      flipped_spirtes_31: -6721250664272501683
+      flipped_spirtes_32: 8540903013447764394
+      flipped_spirtes_33: -8436878857571620739
+      flipped_spirtes_34: -6328900739480982091
+      flipped_spirtes_35: 3480428988876048157
+      flipped_spirtes_36: -4422764767608583884
+      flipped_spirtes_37: 8080891484216120038
+      flipped_spirtes_38: 7475231292610490923
+      flipped_spirtes_39: -5669781484788860815
+      flipped_spirtes_4: -2987302625623699616
+      flipped_spirtes_40: -5353027849772043317
+      flipped_spirtes_41: 982683276569299973
+      flipped_spirtes_42: -1867764201315193945
+      flipped_spirtes_43: -6766908395149648896
+      flipped_spirtes_44: -6477840336756465828
+      flipped_spirtes_45: 4019444962757021744
+      flipped_spirtes_46: -2909392834583441182
+      flipped_spirtes_47: 1721742825635207672
+      flipped_spirtes_48: 5758851411979129467
+      flipped_spirtes_49: -4570108120910687217
+      flipped_spirtes_5: 7795692881632620450
+      flipped_spirtes_50: -5558770185558254782
+      flipped_spirtes_51: 3264363286500565422
+      flipped_spirtes_52: -238651583526552415
+      flipped_spirtes_53: 8699906349987114298
+      flipped_spirtes_54: 2333535996926519954
+      flipped_spirtes_55: -3035660556844986203
+      flipped_spirtes_56: 6270663728648035232
+      flipped_spirtes_57: 6544109776374861088
+      flipped_spirtes_58: -3661029610814961837
+      flipped_spirtes_59: 2067870316312511887
+      flipped_spirtes_6: -785919035958935733
+      flipped_spirtes_60: -8126887228320714506
+      flipped_spirtes_61: 6087814071651261669
+      flipped_spirtes_7: -1822699123685519932
+      flipped_spirtes_8: -6753574736621199092
+      flipped_spirtes_9: -3574310209510801751
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
