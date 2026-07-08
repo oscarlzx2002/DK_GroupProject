@@ -7,13 +7,12 @@ public class LadderSystem : MonoBehaviour
     public bool canclimb;
     public bool isclimbing;
     public float climbspeed = 4f;
-    Rigidbody2D rb;
-    
+    Movement movement;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -27,13 +26,13 @@ public class LadderSystem : MonoBehaviour
         }
         if (isclimbing)
         {
-            rb.gravityScale = 0;
-            rb.linearVelocity = new Vector2
-                (rb.linearVelocity.x, vertical * climbspeed);
+           movement.rb.gravityScale = 0;
+            movement.rb.linearVelocity = new Vector2
+                (movement.rb.linearVelocity.x, vertical * climbspeed);
         }
         else
         {
-            rb.gravityScale = normalGravity;
+            movement.rb.gravityScale = 9.8f;
         }
     }
 }
