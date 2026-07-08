@@ -4,12 +4,9 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-<<<<<<< Updated upstream
     public Rigidbody2D rb;
-=======
-    private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
->>>>>>> Stashed changes
+
     private Vector2 movement;
 
     void Awake()
