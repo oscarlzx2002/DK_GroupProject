@@ -4,7 +4,7 @@ public class Movement : MonoBehaviour
 {
 
     //Floats
-    public float climbSpeed = 0.5f;
+    public float climbSpeed;
     public float moveSpeed = 4.0f;
     public float jumpForce = 1.0f;
 
@@ -82,39 +82,47 @@ public class Movement : MonoBehaviour
         //Climb on zero gravity, else normal gravity
         if (isClimbing)
         {
-            anim.speed = 0;
-            rb.gravityScale = 0f;
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
-            player.transform.position = new Vector2(ladderX, rb.position.y);
+            //anim.speed = 0;
+            //rb.gravityScale = 0f;
+            //rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
+            //player.transform.position = new Vector2(ladderX, rb.position.y);
         }
         else
         {
-            anim.speed = 1;
-            rb.linearVelocityY = 0;
-            rb.gravityScale = 5f;
+            if(!isClimbing)
+            {
+                anim.speed = 1;
+                rb.linearVelocityY = 0;
+                rb.gravityScale = 10f;
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ladder"))
+        print(collision);
+        /*if (collision.CompareTag("Ladder"))
         {
-            isLadder = true;
-            ladderX = collision.transform.position.x;
-
-            if (Input.GetKey(KeyCode.W) && vertical > 0)
+                isLadder = true;
+            if(Input.GetKey(KeyCode.W))
             {
-                anim.SetBool("Climb", true);
                 isClimbing = true;
-            }
-            else
-            {
-                if(vertical == 0)
-                {
-                    anim.speed = 0;
-                }
+                anim.SetBool("Climb", true);
+
+                anim.speed = 1;
+                rb.gravityScale = 0f;
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
+                ladderX = collision.transform.position.x;
             }
         }
+        else
+        {
+            if (vertical == 0)
+            {
+                anim.speed = 0;
+            }
+        }*/
+    
         if (collision.CompareTag("EndClimb"))
         {
             anim.SetBool("Climb", false);
@@ -122,6 +130,36 @@ public class Movement : MonoBehaviour
             player.transform.position = this.transform.position;
         }
 
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isLadder = true;
+            if (Input.GetKey(KeyCode.W))
+            {
+                isClimbing = true;
+                anim.SetBool("Climb", true);
+
+                anim.speed = 1;
+                rb.gravityScale = 0f;
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
+                ladderX = collision.transform.position.x;
+            }
+        }
+        else
+        {
+            
+            if (vertical == 0 && collision.CompareTag("Ladder"))
+            {
+                anim.speed = 0;
+                rb.gravityScale = 0f;
+
+            }
+
+            anim.speed = 1;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
