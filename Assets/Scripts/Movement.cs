@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
     //Floats
     public float climbSpeed;
     public float moveSpeed = 4.0f;
-    public float jumpForce = 1.0f;
+    public float jumpForce;
 
     public float horizontal;
     public float vertical;
@@ -36,7 +36,6 @@ public class Movement : MonoBehaviour
     }
     void Update()
     {
-        print(isLadder);
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -54,14 +53,11 @@ public class Movement : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+            Jump();
         }
-        if (Input.GetButtonUp("Jump") && rb.linearVelocityY > 0f)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * 0.5f);
-        }
+        
 
         if (isLadder && Mathf.Abs(vertical) > 0f)
         {
@@ -71,6 +67,15 @@ public class Movement : MonoBehaviour
         {
             //Barrel.pE.rotationalOffset = 180f;
         }
+    }
+    void Jump()
+    {
+        // Apply immediate upward force using Impulse mode
+        Debug.Log("Before: " + rb.linearVelocityY);
+        rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        Debug.Log("After" + rb.linearVelocityY);
+
+        //rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * jumpForce);
     }
     private void FixedUpdate()
     {
@@ -82,18 +87,18 @@ public class Movement : MonoBehaviour
         //Climb on zero gravity, else normal gravity
         if (isClimbing)
         {
-            //anim.speed = 0;
-            //rb.gravityScale = 0f;
-            //rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
-            //player.transform.position = new Vector2(ladderX, rb.position.y);
+            anim.speed = 0;
+            rb.gravityScale = 0f;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
+            player.transform.position = new Vector2(ladderX, rb.position.y);
         }
         else
         {
             if(!isClimbing)
             {
                 anim.speed = 1;
-                rb.linearVelocityY = 0;
                 rb.gravityScale = 10f;
+
             }
         }
     }
@@ -101,27 +106,6 @@ public class Movement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print(collision);
-        /*if (collision.CompareTag("Ladder"))
-        {
-                isLadder = true;
-            if(Input.GetKey(KeyCode.W))
-            {
-                isClimbing = true;
-                anim.SetBool("Climb", true);
-
-                anim.speed = 1;
-                rb.gravityScale = 0f;
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
-                ladderX = collision.transform.position.x;
-            }
-        }
-        else
-        {
-            if (vertical == 0)
-            {
-                anim.speed = 0;
-            }
-        }*/
     
         if (collision.CompareTag("EndClimb"))
         {
