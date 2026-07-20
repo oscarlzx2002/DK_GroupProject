@@ -4,37 +4,38 @@ using System.Collections;
 public class DonkeyKongStun : MonoBehaviour
 {
     private BarrelSpawn barrelSpawn;
-    private bool isStunned = false;
+    private bool stunned = false;
 
-    private void Start()
+    private void Awake()
     {
         barrelSpawn = GetComponent<BarrelSpawn>();
     }
 
     public void Stun(float duration)
     {
-        if (!isStunned)
-        {
-            StartCoroutine(StunCoroutine(duration));
-        }
+        if (stunned)
+            return;
+
+        StartCoroutine(StunRoutine(duration));
     }
 
-    IEnumerator StunCoroutine(float duration)
+    IEnumerator StunRoutine(float duration)
     {
-        isStunned = true;
+        stunned = true;
 
-        // Disable the barrel spawning script
-        barrelSpawn.enabled = false;
+        Debug.Log("Donkey Kong Stunned!");
 
-        Debug.Log("Donkey Kong is stunned!");
+        // Stop spawning barrels
+        barrelSpawn.CancelInvoke();
 
+        // Wait 5 seconds
         yield return new WaitForSeconds(duration);
 
-        // Enable it again
-        barrelSpawn.enabled = true;
+        Debug.Log("Donkey Kong Recovered!");
 
-        isStunned = false;
+        // Start spawning again
+        barrelSpawn.InvokeRepeating(nameof(BarrelSpawn.SpawnBarrel), 0f, barrelSpawn.spawnInterval);
 
-        Debug.Log("Donkey Kong recovered!");
+        stunned = false;
     }
 }

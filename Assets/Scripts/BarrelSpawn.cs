@@ -14,7 +14,7 @@ public class BarrelSpawn : MonoBehaviour
         //instantiate after seconds (menthod, delay after call, interval)
         InvokeRepeating( nameof(SpawnBarrel), 2f, spawnInterval);
     }
-    void SpawnBarrel()
+    public void SpawnBarrel()
     {
         float chance = Random.value;
 

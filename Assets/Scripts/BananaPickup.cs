@@ -8,6 +8,8 @@ public class BananaPickup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Banana Picked Up!");
+
             donkeyKong.Stun(5f);
 
             Destroy(gameObject);
