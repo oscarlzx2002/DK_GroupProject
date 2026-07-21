@@ -25,13 +25,11 @@ public class Movement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public GameObject player;
-    public BoxCollider2D bCollider;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        bCollider = GetComponent<BoxCollider2D>();
     }
     private void Start()
     {
@@ -94,6 +92,7 @@ public class Movement : MonoBehaviour
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
             player.transform.position = new Vector2(ladderX, rb.position.y);
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("Ground"),true);
 
         }
         else
@@ -115,7 +114,7 @@ public class Movement : MonoBehaviour
             anim.SetBool("Climb", false);
             isClimbing = false;
             player.transform.position = this.transform.position;
-            bCollider.isTrigger = false;
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ground"), false);
 
         }
 
@@ -123,14 +122,16 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+
+
         if (collision.CompareTag("Ladder"))
         {
+
             isLadder = true;
             if (Input.GetKey(KeyCode.W))
             {
                 isClimbing = true;
                 anim.SetBool("Climb", true);
-                bCollider.isTrigger = true;
                 anim.speed = 1;
                 rb.gravityScale = 0f;
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
@@ -153,7 +154,7 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ladder"))
+        if (collision.CompareTag("EndClimb"))
         {
             anim.SetBool("Climb", false);
 

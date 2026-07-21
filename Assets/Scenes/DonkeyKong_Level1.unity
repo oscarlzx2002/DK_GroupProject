@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9892243}
   - component: {fileID: 9892244}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ladder_Endpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 76862116}
   - component: {fileID: 76862115}
   - component: {fileID: 76862114}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mario
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -803,7 +803,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   player: {fileID: 76862113}
-  bCollider: {fileID: 0}
 --- !u!61 &76862115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2883,7 +2882,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.03968081}
+  m_Offset: {x: 0, y: 0.004393436}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2893,7 +2892,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.33138174}
+  m_Size: {x: 0.08, y: 0.26080698}
   m_EdgeRadius: 0
 --- !u!212 &204611175
 SpriteRenderer:
@@ -7037,7 +7036,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 598427226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10795,7 +10794,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.046626046}
+  m_Offset: {x: 0, y: -0.0019670948}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10805,7 +10804,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.40783748}
+  m_Size: {x: 0.08, y: 0.31065118}
   m_EdgeRadius: 0
 --- !u!212 &909966926
 SpriteRenderer:
@@ -11096,7 +11095,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.012972407}
+  m_Offset: {x: 0, y: -0.014571406}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11106,7 +11105,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.39619982}
+  m_Size: {x: 0.08, y: 0.3411122}
   m_EdgeRadius: 0
 --- !u!212 &928708337
 SpriteRenderer:
@@ -12411,7 +12410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1021869614
 Transform:
   m_ObjectHideFlags: 0
@@ -12962,7 +12961,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.0014135987}
+  m_Offset: {x: 0, y: -0.020690456}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12972,7 +12971,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.31260654}
+  m_Size: {x: 0.08, y: 0.26839843}
   m_EdgeRadius: 0
 --- !u!212 &1042801904
 SpriteRenderer:
@@ -14052,7 +14051,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   player: {fileID: 1106816853}
-  bCollider: {fileID: 0}
 --- !u!61 &1106816856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16073,7 +16071,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.012022331}
+  m_Offset: {x: 0, y: -0.016830303}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16083,7 +16081,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.4008133}
+  m_Size: {x: 0.08, y: 0.34310806}
   m_EdgeRadius: 0
 --- !u!212 &1332277122
 SpriteRenderer:
@@ -16293,7 +16291,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.025156364}
+  m_Offset: {x: 0, y: -0.0021592528}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16303,7 +16301,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.3468503}
+  m_Size: {x: 0.08, y: 0.29221907}
   m_EdgeRadius: 0
 --- !u!212 &1339359164
 SpriteRenderer:
@@ -16665,7 +16663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371669004}
   - component: {fileID: 1371669005}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ladder_Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17235,7 +17233,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.016954325}
+  m_Offset: {x: 0, y: -0.012485042}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17245,7 +17243,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.37132573}
+  m_Size: {x: 0.08, y: 0.31244698}
   m_EdgeRadius: 0
 --- !u!212 &1449584051
 SpriteRenderer:
@@ -17370,7 +17368,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.032536313}
+  m_Offset: {x: 0, y: 0.009549089}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17380,7 +17378,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.3064921}
+  m_Size: {x: 0.08, y: 0.2605176}
   m_EdgeRadius: 0
 --- !u!212 &1454479347
 SpriteRenderer:
@@ -19449,7 +19447,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.034810282}
+  m_Offset: {x: 0, y: 0.00543385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19459,7 +19457,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.08, y: 0.2836861}
+  m_Size: {x: 0.08, y: 0.22493325}
   m_EdgeRadius: 0
 --- !u!212 &1571647237
 SpriteRenderer:
@@ -23134,7 +23132,7 @@ Transform:
   m_GameObject: {fileID: 1984765168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.12, y: 0.23860002, z: 0.048284166}
+  m_LocalPosition: {x: -2.12, y: 0.023, z: 0.048284166}
   m_LocalScale: {x: 0.2, y: 0.16, z: 0.4954916}
   m_ConstrainProportionsScale: 0
   m_Children: []
