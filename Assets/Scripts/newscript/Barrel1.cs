@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Barrel1 : MonoBehaviour
 {
-    private float rollspeed = 0.25f;
+    private float rollspeed = 2f;
     private bool rotateSprite = true;
     private float rotationMultiplier = -500f;
 
