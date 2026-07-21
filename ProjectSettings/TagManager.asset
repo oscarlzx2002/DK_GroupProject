@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - EndClimb
   - Donkey Kong
+  - Barrel
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Player
   - Barrel
   - BarrelPhase
-  - 
+  - Hammer
   - 
   - 
   - 
