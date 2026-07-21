@@ -36,33 +36,25 @@ public class Barrel1 : MonoBehaviour
         {
             direction = platformDir.rollRight ? 1f : -1f;
         }
-
-
-
-
-
-
-        /* Push barrels in the direction the platform is facing.
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-            rb.AddForce(collision.transform.right * speed, ForceMode2D.Impulse);
-            return;
-        }
-
-        // Restart the scene if the player is hit.
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }*/
     }
-
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // Get Mario's Animator (check both Mario and parent objects in case collider is on a child)
+            Animator playerAnim = collision.gameObject.GetComponentInParent<Animator>();
+
+            // Check if Mario is holding the hammer
+            if (playerAnim != null && playerAnim.GetBool("hasHammer"))
+            {
+                // Hammer active -> Destroy the barrel!
+                Destroy(gameObject);
+            }
+            else
+            {
+                // No hammer -> Mario dies / Level restarts
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
-
-
 }
