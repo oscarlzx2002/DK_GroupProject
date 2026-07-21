@@ -4,23 +4,42 @@ using System.Collections;
 public class LadderBehaviour : MonoBehaviour
 {
     public int ladderNumber;
+    private bool isDisabled = false;
+    private LadderNumberGen generator;
 
     void Start()
     {
-        StartCoroutine(CheckAfterDelay());
-    }
-
-    IEnumerator CheckAfterDelay()
-    {
-        // Wait one frame to ensure LadderNumberGen has run
-        yield return null;
-
-        LadderNumberGen generator = FindFirstObjectByType<LadderNumberGen>();
+        generator = FindFirstObjectByType<LadderNumberGen>();
 
         if (generator == null)
         {
             Debug.LogError("LadderNumberGen not found in scene!");
-            yield break;
+            return;
+        }
+
+        // Subscribe to regeneration event
+        LadderNumberGen.OnNumbersRegenerated += CheckLadder;
+
+        // Wait one frame before checking
+        StartCoroutine(DelayedCheck());
+    }
+
+    IEnumerator DelayedCheck()
+    {
+        yield return null;
+        CheckLadder();
+    }
+
+    void CheckLadder()
+    {
+        if (generator == null)
+        {
+            generator = FindFirstObjectByType<LadderNumberGen>();
+            if (generator == null)
+            {
+                Debug.LogError("LadderNumberGen not found in scene!");
+                return;
+            }
         }
 
         int[] randomNumbers = {
@@ -41,10 +60,26 @@ public class LadderBehaviour : MonoBehaviour
             }
         }
 
-        if (!isMatch)
+        if (isMatch)
+        {
+            if (isDisabled)
+            {
+                gameObject.SetActive(true);
+                isDisabled = false;
+                Debug.Log($"Ladder {ladderNumber} re-enabled");
+            }
+        }
+        else
         {
             gameObject.SetActive(false);
-            Debug.Log($"Ladder {ladderNumber} disabled (not in random numbers)");
+            isDisabled = true;
+            Debug.Log($"Ladder {ladderNumber} disabled");
         }
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe to prevent memory leaks
+        LadderNumberGen.OnNumbersRegenerated -= CheckLadder;
     }
 }

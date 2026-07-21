@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class LadderNumberGen : MonoBehaviour
 {
@@ -7,42 +8,59 @@ public class LadderNumberGen : MonoBehaviour
     public int ladder2;
     public int ladder1;
 
+    [Header("Regeneration Settings")]
+    public float regenerateInterval = 5f;
+    public bool regenerateOnStart = true;
+
+    public static bool HasGenerated { get; private set; } = false;
+
+    // Event that fires when numbers regenerate
+    public static event Action OnNumbersRegenerated;
+
     void Start()
     {
-        GenerateNumbers();
+        if (regenerateOnStart)
+        {
+            GenerateNumbers();
+            HasGenerated = true;
+            InvokeRepeating("RegenerateNumbers", regenerateInterval, regenerateInterval);
+        }
     }
 
     void GenerateNumbers()
     {
-        // Generate ladder1 and ladder2 first (they can't be 5 or 9 based on ranges)
-        ladder1 = Random.Range(1, 3); // 1 or 2
-        ladder2 = Random.Range(3, 6); // 3, 4, or 5
+        ladder4 = UnityEngine.Random.Range(8, 11);
+        ladder3 = UnityEngine.Random.Range(6, 8);
+        ladder2 = UnityEngine.Random.Range(3, 6);
+        ladder1 = UnityEngine.Random.Range(1, 3);
 
-        // Generate ladder3 (range 5-8 - can be 5)
-        ladder3 = Random.Range(5, 8); // 5, 6, or 7
-
-        // Generate ladder4 (range 8-11 - can be 9)
-        ladder4 = Random.Range(8, 11); // 8, 9, or 10
-
-        // If ladder3 is 5, make sure ladder4 is NOT 9
-        if (ladder3 == 5)
+        if (Contains5And9())
         {
-            // Regenerate ladder4 until it's not 9
-            while (ladder4 == 9)
+            while (Contains5And9())
             {
-                ladder4 = Random.Range(8, 11);
-            }
-        }
-        // If ladder4 is 9, make sure ladder3 is NOT 5
-        else if (ladder4 == 9)
-        {
-            // Regenerate ladder3 until it's not 5
-            while (ladder3 == 5)
-            {
-                ladder3 = Random.Range(5, 8);
+                ladder4 = UnityEngine.Random.Range(8, 11);
+                ladder3 = UnityEngine.Random.Range(6, 8);
+                ladder2 = UnityEngine.Random.Range(3, 6);
+                ladder1 = UnityEngine.Random.Range(1, 3);
             }
         }
 
         Debug.Log($"Ladder Numbers: {ladder1}, {ladder2}, {ladder3}, {ladder4}");
+    }
+
+    void RegenerateNumbers()
+    {
+        GenerateNumbers();
+        Debug.Log($"Ladder numbers regenerated! Next in {regenerateInterval} seconds");
+
+        // Notify all ladders to check their status
+        OnNumbersRegenerated?.Invoke();
+    }
+
+    bool Contains5And9()
+    {
+        bool has5 = ladder1 == 5 || ladder2 == 5 || ladder3 == 5 || ladder4 == 5;
+        bool has9 = ladder1 == 9 || ladder2 == 9 || ladder3 == 9 || ladder4 == 9;
+        return has5 && has9;
     }
 }

@@ -6,12 +6,12 @@ public class BarrelSpawn : MonoBehaviour
 
     [SerializeField] private Animator dKong;
     public GameObject spawner;
-    public float spawnInterval = 3f;
+    public float spawnInterval = 5f;
 
     void Start()
     {
         //instantiate after seconds (menthod, delay after call, interval)
-        InvokeRepeating( nameof(SpawnBarrel), 2f, spawnInterval);
+        InvokeRepeating( nameof(SpawnBarrel), 3f, spawnInterval);
         dKong = GetComponent<Animator>();
     }
     public void SpawnBarrel()

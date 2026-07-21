@@ -1,49 +1,45 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
-{
 
-    //Floats
-    public float climbSpeed;
+{
+    // Floats
+    public float climbSpeed = 3.0f;
     public float moveSpeed = 4.0f;
-    public float jumpForce;
+    public float jumpForce = 5.0f;
 
     public float horizontal;
     public float vertical;
     public float ladderX;
-    public int Yspeed;
 
     public bool isClimbing;
     public bool isLadder;
 
-
-    //Components
+    // Components
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public Animator anim;
 
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public GameObject player;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void Start()
-    {
 
-    }
     void Update()
     {
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        anim.SetInteger("Speed", (int)horizontal);
-
+        anim.SetInteger("Speed", (int)Mathf.Abs(horizontal));
         anim.SetInteger("Yspeed", (int)vertical);
-        //Flip sprite
+
+        // Flip sprite
         if (horizontal > 0)
         {
             spriteRenderer.flipX = false; // Face right
@@ -53,128 +49,113 @@ public class Movement : MonoBehaviour
             spriteRenderer.flipX = true; // Face left
         }
 
-        //Jump
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true && !anim.GetBool("hasHammer"))
+        // Jump (Only when grounded and NOT climbing)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !isClimbing && !anim.GetBool("hasHammer"))
         {
-            
             Jump();
         }
-        
 
-        if (isLadder && Mathf.Abs(vertical) > 0f)
+        // START CLIMBING: Triggered by pressing UP or DOWN while touching a ladder
+        if (isLadder && Mathf.Abs(vertical) > 0f && !isClimbing)
         {
-            isClimbing = true;
+            StartClimbing();
         }
-        else
+
+        // STOP CLIMBING: If Mario presses DOWN and reaches the solid floor platform
+        if (isClimbing && vertical < 0f && IsGrounded())
         {
-            //Barrel.pE.rotationalOffset = 180f;
+            StopClimbing();
         }
     }
+
     void Jump()
     {
-        // Apply immediate upward force using Impulse mode
-        Debug.Log("Before: " + rb.linearVelocityY);
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-        Debug.Log("After" + rb.linearVelocityY);
-        //rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * jumpForce);
     }
+
     private void FixedUpdate()
     {
-        //Movement
-        rb.linearVelocity = new Vector2(horizontal * moveSpeed, rb.linearVelocityY);
-
-        
-
-        //Climb on zero gravity, else normal gravity
         if (isClimbing)
         {
-            anim.speed = 0;
             rb.gravityScale = 0f;
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
-            player.transform.position = new Vector2(ladderX, rb.position.y);
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"),LayerMask.NameToLayer("Ground"),true);
 
+            // Allow vertical climbing movement
+            rb.linearVelocity = new Vector2(0f, vertical * climbSpeed);
+
+            // Center Mario on ladder X
+            rb.position = new Vector2(ladderX, rb.position.y);
+
+            // Pause animation if player isn't moving on ladder
+            anim.speed = (vertical != 0) ? 1f : 0f;
         }
         else
         {
-            if(!isClimbing)
-            {
-                anim.speed = 1;
-                rb.gravityScale = 6f;
-
-            }
+            // Standard horizontal platform movement
+            anim.speed = 1f;
+            rb.gravityScale = 6f;
+            rb.linearVelocity = new Vector2(horizontal * moveSpeed, rb.linearVelocityY);
         }
+    }
+
+    private void StartClimbing()
+    {
+        isClimbing = true;
+        anim.SetBool("Climb", true);
+
+        // Disable player-ground collisions while on ladder
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ground"), true);
+    }
+
+    private void StopClimbing()
+    {
+        isClimbing = false;
+        anim.SetBool("Climb", false);
+        anim.speed = 1f;
+
+        // CRUCIAL: Re-enable ground collisions!
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ground"), false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-    
-        if (collision.CompareTag("EndClimb"))
-        {
-            anim.SetBool("Climb", false);
-            isClimbing = false;
-            player.transform.position = this.transform.position;
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ground"), false);
-
-        }
-
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-
-
         if (collision.CompareTag("Ladder"))
         {
-
             isLadder = true;
-            if (Input.GetKey(KeyCode.W))
-            {
-                isClimbing = true;
-                anim.SetBool("Climb", true);
-                anim.speed = 1;
-                rb.gravityScale = 0f;
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
-                ladderX = collision.transform.position.x;
-            }
+            ladderX = collision.transform.position.x;
         }
-        else
+
+        if (collision.CompareTag("EndClimb"))
         {
-            
-            if (vertical == 0 && collision.CompareTag("Ladder"))
-            {
-                anim.speed = 0;
-                rb.gravityScale = 0f;
-
-            }
-
-            anim.speed = 1;
+            StopClimbing();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("EndClimb"))
+        if (collision.CompareTag("Ladder"))
         {
-            anim.SetBool("Climb", false);
-
             isLadder = false;
-            isClimbing = false;
-            player.transform.position = this.transform.position;
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ground"), false);
+            if (isClimbing)
+            {
+                StopClimbing();
+            }
         }
 
-        // destroy barrels automatically while holding the hammer
-        if (collision.CompareTag("Barrel") && anim.GetBool("hasHammer"))
+        if (collision.CompareTag("EndClimb"))
+        {
+            StopClimbing();
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (anim.GetBool("hasHammer") &&
+            collision.gameObject.CompareTag("Barrel"))
         {
             Destroy(collision.gameObject);
         }
     }
-
-    //Grounded check
     public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
-
 }
