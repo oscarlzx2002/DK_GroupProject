@@ -14,9 +14,8 @@ public class Barrel1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+    
     }
-
-
     void Update()
     {
         if (direction != 0f)
@@ -37,11 +36,7 @@ public class Barrel1 : MonoBehaviour
         {
             direction = platformDir.rollRight ? 1f : -1f;
         }
-        else if (collision.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-        }
 
 
 
@@ -61,7 +56,13 @@ public class Barrel1 : MonoBehaviour
         }*/
     }
 
-
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
 
 
 }
