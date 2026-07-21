@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class BananaPickup : MonoBehaviour
 {
-    [SerializeField] private DonkeyKongStun donkeyKong;
+    [SerializeField] private float slowDuration = 6f;
+    [SerializeField] private float slowedSpeed = 1.5f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -10,7 +11,12 @@ public class BananaPickup : MonoBehaviour
         {
             Debug.Log("Banana Picked Up!");
 
-            donkeyKong.Stun(5f);
+            PlayerSlow playerSlow = collision.GetComponent<PlayerSlow>();
+
+            if (playerSlow != null)
+            {
+                playerSlow.SlowPlayer(slowDuration, slowedSpeed);
+            }
 
             Destroy(gameObject);
         }

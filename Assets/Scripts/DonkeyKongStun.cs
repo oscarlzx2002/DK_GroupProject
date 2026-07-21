@@ -5,11 +5,10 @@ public class DonkeyKongStun : MonoBehaviour
 {
     private BarrelSpawn barrelSpawn;
     private bool stunned = false;
-    private Animator anim;
+
     private void Awake()
     {
         barrelSpawn = GetComponent<BarrelSpawn>();
-        anim = GetComponent<Animator>();
     }
 
     public void Stun(float duration)
@@ -17,27 +16,22 @@ public class DonkeyKongStun : MonoBehaviour
         if (stunned)
             return;
 
-        StartCoroutine(StunRoutine(duration));
+        StartCoroutine(StunRoutine());
     }
 
-    IEnumerator StunRoutine(float duration)
+    private IEnumerator StunRoutine()
     {
         stunned = true;
 
-        Debug.Log("Donkey Kong Stunned!");
+        Debug.Log("Donkey Kong Stunned for 20 seconds!");
 
-        // Stop spawning barrels
-        barrelSpawn.CancelInvoke();
+        barrelSpawn.StopSpawning();
 
-        // Wait 5 seconds
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(20f);
 
         Debug.Log("Donkey Kong Recovered!");
 
-        // Start spawning again
-        barrelSpawn.InvokeRepeating(nameof(BarrelSpawn.SpawnBarrel), 0f, barrelSpawn.spawnInterval);
-
-        
+        barrelSpawn.ResumeSpawning();
 
         stunned = false;
     }
