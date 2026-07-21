@@ -75,7 +75,6 @@ public class Movement : MonoBehaviour
         Debug.Log("Before: " + rb.linearVelocityY);
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         Debug.Log("After" + rb.linearVelocityY);
-
         //rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * jumpForce);
     }
     private void FixedUpdate()
@@ -100,7 +99,7 @@ public class Movement : MonoBehaviour
             if(!isClimbing)
             {
                 anim.speed = 1;
-                rb.gravityScale = 10f;
+                rb.gravityScale = 6f;
 
             }
         }
