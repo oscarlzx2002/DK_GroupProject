@@ -4,21 +4,6 @@ using System.Collections.Generic;
 
 public class Barrel : MonoBehaviour
 {
-    /*protected Rigidbody2D rb;
-
-    protected virtual void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-    protected virtual void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out Movement p))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-
-    }*/
-
     protected Rigidbody2D rb;
     public float speed = 1f;
 
@@ -39,7 +24,27 @@ public class Barrel : MonoBehaviour
         // Restart the scene if the player is hit.
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Animator playerAnim = collision.gameObject.GetComponent<Animator>();
+
+            if (playerAnim == null)
+            {
+                Debug.LogError("CRITICAL: No Animator found on " + collision.gameObject.name);
+                return;
+            }
+
+            bool holdsHammer = playerAnim.GetBool("hasHammer");
+            Debug.Log("Hit Mario! 'hasHammer' parameter value is: " + holdsHammer);
+
+            if (holdsHammer)
+            {
+                Debug.Log("Smashing Barrel!");
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("Mario took damage / died!");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
 }

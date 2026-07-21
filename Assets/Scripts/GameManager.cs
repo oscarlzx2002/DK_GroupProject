@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,5 +27,12 @@ public class GameManager : MonoBehaviour
 
         // Resume the game
         Time.timeScale = 1f;
+    }
+    private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
