@@ -33,6 +33,7 @@ public class Movement : MonoBehaviour
     }
     private void Start()
     {
+
     }
     void Update()
     {
@@ -105,7 +106,6 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print(collision);
     
         if (collision.CompareTag("EndClimb"))
         {
@@ -163,5 +163,8 @@ public class Movement : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
+
+
+
 
 }

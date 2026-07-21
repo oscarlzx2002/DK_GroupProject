@@ -5,6 +5,8 @@ public class BarrelSpawn : MonoBehaviour
     [SerializeField] private GameObject barrelPrefabFall;
     [SerializeField] private GameObject barrelPrefabRoll;
     [SerializeField] private Transform[] spawnPoints;
+
+    [SerializeField] private Animator dKong;
     Transform chosenSpawner;
 
     public float spawnInterval = 3f;
@@ -13,9 +15,12 @@ public class BarrelSpawn : MonoBehaviour
     {
         //instantiate after seconds (menthod, delay after call, interval)
         InvokeRepeating( nameof(SpawnBarrel), 2f, spawnInterval);
+        dKong = GetComponent<Animator>();
     }
     public void SpawnBarrel()
     {
+
+        Instantiate(barrelPrefabRoll, chosenSpawner.position, Quaternion.identity);
         float chance = Random.value;
 
         // pick a random spawner
@@ -24,7 +29,6 @@ public class BarrelSpawn : MonoBehaviour
         {
             chosenSpawner = spawnPoints[0];
             Instantiate(barrelPrefabRoll, chosenSpawner.position, Quaternion.identity);
-
         }
         else
         {
@@ -33,8 +37,5 @@ public class BarrelSpawn : MonoBehaviour
             Instantiate(barrelPrefabFall, chosenSpawner.position, Quaternion.identity);
 
         }
-
-
-        // instantiate definition (object, spawn position, rotation)
     }
 }

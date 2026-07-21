@@ -5,10 +5,11 @@ public class DonkeyKongStun : MonoBehaviour
 {
     private BarrelSpawn barrelSpawn;
     private bool stunned = false;
-
+    private Animator anim;
     private void Awake()
     {
         barrelSpawn = GetComponent<BarrelSpawn>();
+        anim = GetComponent<Animator>();
     }
 
     public void Stun(float duration)
@@ -35,6 +36,8 @@ public class DonkeyKongStun : MonoBehaviour
 
         // Start spawning again
         barrelSpawn.InvokeRepeating(nameof(BarrelSpawn.SpawnBarrel), 0f, barrelSpawn.spawnInterval);
+
+        
 
         stunned = false;
     }
