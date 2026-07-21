@@ -25,11 +25,13 @@ public class Movement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public GameObject player;
+    public BoxCollider2D bCollider;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        bCollider = GetComponent<BoxCollider2D>();
     }
     private void Start()
     {
@@ -83,7 +85,7 @@ public class Movement : MonoBehaviour
         //Movement
         rb.linearVelocity = new Vector2(horizontal * moveSpeed, rb.linearVelocityY);
 
-
+        
 
         //Climb on zero gravity, else normal gravity
         if (isClimbing)
@@ -92,6 +94,7 @@ public class Movement : MonoBehaviour
             rb.gravityScale = 0f;
             rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
             player.transform.position = new Vector2(ladderX, rb.position.y);
+
         }
         else
         {
@@ -112,6 +115,8 @@ public class Movement : MonoBehaviour
             anim.SetBool("Climb", false);
             isClimbing = false;
             player.transform.position = this.transform.position;
+            bCollider.isTrigger = false;
+
         }
 
     }
@@ -125,7 +130,7 @@ public class Movement : MonoBehaviour
             {
                 isClimbing = true;
                 anim.SetBool("Climb", true);
-
+                bCollider.isTrigger = true;
                 anim.speed = 1;
                 rb.gravityScale = 0f;
                 rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * climbSpeed);
