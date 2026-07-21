@@ -16,7 +16,18 @@ public class BarrelSpawn : MonoBehaviour
     }
     public void SpawnBarrel()
     {
+        Debug.Log("Spawning Barrel");
 
         Instantiate(barrelPrefabRoll, spawner.transform.position, Quaternion.identity);
+    }
+    public void StopSpawning()
+    {
+        CancelInvoke(nameof(SpawnBarrel));
+    }
+
+    public void ResumeSpawning()
+    {
+        CancelInvoke(nameof(SpawnBarrel));
+        InvokeRepeating(nameof(SpawnBarrel), spawnInterval, spawnInterval);
     }
 }
