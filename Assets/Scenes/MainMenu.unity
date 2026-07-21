@@ -151,7 +151,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 927260149}
-  m_Father: {fileID: 1117711597}
+  m_Father: {fileID: 291657372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -213,7 +213,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: DonkeyKong_Level1
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &94838960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +429,7 @@ RectTransform:
   - {fileID: 1117711597}
   - {fileID: 491123356}
   - {fileID: 1825872898}
+  - {fileID: 94838958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -917,7 +918,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 94838958}
   - {fileID: 2142790295}
   m_Father: {fileID: 291657372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -992,7 +992,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 291657372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
