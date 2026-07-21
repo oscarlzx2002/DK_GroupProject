@@ -1,31 +1,50 @@
 using UnityEngine;
+using System.Collections;
 
 public class LadderBehaviour : MonoBehaviour
 {
-    
-    [SerializeField] private PlatformEffector2D pE;
-    [SerializeField] private Movement movement;
+    public int ladderNumber;
 
-    public bool isClimbing;
-    public bool isLadder;
-
-
-    private void Start()
+    void Start()
     {
-        pE = GetComponent<PlatformEffector2D>();
-    }
-    void Update()
-    {
-
+        StartCoroutine(CheckAfterDelay());
     }
 
-    void OnClimb()
+    IEnumerator CheckAfterDelay()
     {
-        pE.rotationalOffset = 180f;
-    }
-    void OnClimbEnd()
-    {
-        pE.rotationalOffset = 0f;
-    }
+        // Wait one frame to ensure LadderNumberGen has run
+        yield return null;
 
+        LadderNumberGen generator = FindFirstObjectByType<LadderNumberGen>();
+
+        if (generator == null)
+        {
+            Debug.LogError("LadderNumberGen not found in scene!");
+            yield break;
+        }
+
+        int[] randomNumbers = {
+            generator.ladder1,
+            generator.ladder2,
+            generator.ladder3,
+            generator.ladder4
+        };
+
+        bool isMatch = false;
+
+        foreach (int num in randomNumbers)
+        {
+            if (ladderNumber == num)
+            {
+                isMatch = true;
+                break;
+            }
+        }
+
+        if (!isMatch)
+        {
+            gameObject.SetActive(false);
+            Debug.Log($"Ladder {ladderNumber} disabled (not in random numbers)");
+        }
+    }
 }
