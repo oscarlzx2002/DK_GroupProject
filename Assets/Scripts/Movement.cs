@@ -54,8 +54,9 @@ public class Movement : MonoBehaviour
         }
 
         //Jump
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true && !anim.GetBool("hasHammer"))
         {
+            
             Jump();
         }
         
@@ -159,7 +160,14 @@ public class Movement : MonoBehaviour
 
             isLadder = false;
             isClimbing = false;
+            player.transform.position = this.transform.position;
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Ground"), false);
+        }
 
+        // destroy barrels automatically while holding the hammer
+        if (collision.CompareTag("Barrel") && anim.GetBool("hasHammer"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 
@@ -168,8 +176,5 @@ public class Movement : MonoBehaviour
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
-
-
-
 
 }
